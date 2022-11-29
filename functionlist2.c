@@ -97,8 +97,7 @@ int print_non_printable(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Numbers of chars printed
  */
-
-int print_reverse(va_list types, char buffer[], 
+int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char *str;
@@ -118,7 +117,6 @@ int print_reverse(va_list types, char buffer[],
 	}
 	for (i = 0; str[i]; i++)
 		;
-	
 	for (i = i - 1; i >= 0; i--)
 	{
 		char z = str[i];

@@ -51,7 +51,7 @@ int handle_write_char(char c, char buffer[],
  * @size: size specifier
  * Return: Number of chars printed
  */
-int write_number(int is_negative, int ind, char buffer[], 
+int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int lenght = BUFF_SIZE - ind - 1;
@@ -83,11 +83,11 @@ int write_number(int is_negative, int ind, char buffer[],
  * @extra_c: Extra char
  * Return: NUmber of printed chars
  */
-int write_num(int ind, char buffer[], int flags, 
+int write_num(int ind, char buffer[], int flags,
 	int width, int prec, int length, char padd, char extra_c)
 {
 	int i, padd_start = 1;
-	
+
 	if (prec == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0' && width == 0)
 		return (0); /*printf(".0d", 0) no char is printed*/
 	if (prec == 0 && ind == BUFF_SIZE - 2 && buffer[ind] == '0')
