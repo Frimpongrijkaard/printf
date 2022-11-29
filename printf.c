@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			printed_chars += printed;
 		}
 	}
-	printed_buffer(buffer, &buff_ind);
+	print_buffer(buffer, &buff_ind);
 
 	va_end(list);
 

@@ -121,7 +121,7 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 	unsigned long int num = va_arg(types, unsigned long int);
 	unsigned long int init_num = num;
 
-	UNSUED(width);
+	UNUSED(width);
 
 	num = convert_size_unsgnd(num, size);
 	if (num == 0)
